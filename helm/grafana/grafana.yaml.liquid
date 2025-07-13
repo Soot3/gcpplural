@@ -23,12 +23,12 @@ persistence:
 datasources:
 - name: prometheus
   type: prometheus
-  url: 
+  url: https://monitoring.drafttests.click/select/0/prometheus
   access: proxy
   isDefault: true
   basicAuth: true
-  basicAuthUser: 
-  basicAuthPassword: 
+  basicAuthUser: vm-auth
+  basicAuthPassword: {{ configuration.password }}
 
 
 envFromSecrets:
